@@ -1,4 +1,4 @@
-package arrayandstring;
+package grid;
 
 import java.util.Arrays;
 
@@ -19,4 +19,10 @@ public class Anagram {
             return true;
         return false;
     }
+    private static boolean anagramv2(String str1,String str2){
+
+        return false;
+
+    }
+
 }

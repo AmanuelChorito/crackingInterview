@@ -1,8 +1,10 @@
-package StackImple;
+package grid;
 
-import java.util.Stack;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
 
-public class StackImpl {
+public  class StackImpl {
     //
 //    pop,push,sizeAtConstantTime,minAtConstantTime
 //    How to make it thread safe: use lock
@@ -72,6 +74,8 @@ public class StackImpl {
 
     public static void main(String[] args) {
 
+
+
         StackImpl s = new StackImpl();
         s.push(10);
         s.push(20);
@@ -80,6 +84,12 @@ public class StackImpl {
         System.out.println("Top element is :" + s.peek());
         System.out.print("Elements present in stack :");
         System.out.println(s.min_value());
+
+        List<Integer> a = new ArrayList<>();
+        a.add(null);
+        a.add(null);
+        System.out.println("size"+ a.size());
+        System.out.println(a);
     }
 
 
