@@ -4,12 +4,12 @@ public class TimeRequired {
     public static void main(String[] args) {
 
         FleetDTO fleetDTO = new FleetDTO(1, 2000, 60, 12, 12);
-        int timeSpent = getHoursNeeded(fleetDTO);
+        float timeSpent = getHoursNeeded(fleetDTO);
         System.out.println(timeSpent);
     }
 
-    public static int getHoursNeeded(FleetDTO fleetDTO) {
-        int totalHourRequired = fleetDTO.getDistance() / fleetDTO.getAverageSpeed();
+    public static float getHoursNeeded(FleetDTO fleetDTO) {
+        float totalHourRequired =(float) fleetDTO.getDistance() / fleetDTO.getAverageSpeed();
         int workingHour = Math.min(fleetDTO.getDrivers() * fleetDTO.getWorkingHours(), 24);
         int restHour=(workingHour==24)?0:fleetDTO.getRestHours();
         System.out.println("workingHour"+workingHour+"resHour"+restHour);
