@@ -5,7 +5,8 @@ public class TimeRequired {
 
         FleetDTO fleetDTO = new FleetDTO(1, 2000, 60, 12, 12);
         float timeSpent = getHoursNeeded(fleetDTO);
-        System.out.println(timeSpent);
+        System.out.println("Hours spent"+timeSpent);
+        System.out.println("hours required"+fleetDTO.getDistance()/fleetDTO.getAverageSpeed());
     }
 
     public static float getHoursNeeded(FleetDTO fleetDTO) {
